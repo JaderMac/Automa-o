@@ -1,0 +1,49 @@
+----------------------------
+@BeforeClass
+public static void meuMetodoTeste(){
+	/*
+	Obrigatóriamente Estatico
+	Primeiro código a ser executado!
+	Este código será executado uma vez
+	*/
+}
+
+@BeforeClass
+public void meuMetodo(){
+	// Este código será executado antes de cada teste!
+}
+
+@Test
+public void casodeTeste(){
+	// Passos necessários para validar se os resultados estão de acordo com o esperado.
+}
+
+@After
+public void meuMetodo(){
+	// Este código será executado depois de cada teste!
+}
+
+@AfterClass
+public static void meuMetodo(){
+	/*
+	Obrigatóriamente Estatico
+	Último código a ser executado!
+	Este código será executado uma vez
+	*/
+}
+
+---------------------------------
+
+Iniciando Web driver 
+
+Manipulando o navegador
+	driver.getTitle();						//	retorna	uma	String	com	o	<title>	da	página
+	driver.getCurrentUrl();					//	retorna	uma	String	com	a	url	atual
+	driver.manage().window().maximize();	//	maximiza	a	janela	do	navegador.
+	driver.close();							//	encerra	a	janela	atual
+	driver.quit();							//	encerra	todas	as	janelas
+	driver.getPageSource();					//	retorna	uma	String	com	o	código-fonte da	página	atual.
+	
+
+	
+	
