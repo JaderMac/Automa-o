@@ -44,6 +44,101 @@ Manipulando o navegador
 	driver.quit();							//	encerra	todas	as	janelas
 	driver.getPageSource();					//	retorna	uma	String	com	o	código-fonte da	página	atual.
 	
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Capitulo 5 - Interagindo com elementos!
+	HTML - Tags são nomes de elementos cercados por < >
+		<html>	Abrindo
+		</html>	Fechando
+	
+	Tipos
+		Campo Texto <input type="text">  </input>
+		
+		Links <a href="http://wwww.google.com.br"> meu link </a>
+		
+		Botão <button>Meu Botão</button>
+		
+	Locators que o Selenenium identifica!
+		**id;
+		**name;
+		classname;
+		css;
+		link text;
+		partial link text;
+		xpath; //Nenca optar por ele, só se for a última opção!
+		tagName.
+	** Melhores Locators!
+	
+	
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Capitulo 6 - Mais interações!
+	Select! -
+		Identificar o Select.
+		Definir um método de escolha.
+			Índice, Valor ou Texto Visível.
+	
+	Checkboxes e Radiobuttons
+		Não utilizar o locator name, pois todas opções tem o mesmo.
+			Método isSelected() -> retorna true se estiver selecionado e false se não!
+			Método  getAttribute() -> consigo obter o atributo de um webelement.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Capitulo 7 - Asserts
+	AAA	 (Arrange,	 Act, Assert).
+		Arrange -> Pré-condição!
+		Act -> Ação!
+		Assert -> Validação!
+		
+		import	org.junit.Assert; // Importando a Classe.
+		
+		Assert.assertTrue(VariavelBoleana); // Recebendo uma variavel booleana.
+		Assert.assertTrue(Variavel.equals("ResultadoEsperado")); // Realizando a verificação da variavel como argumento.
+		Assert.assertTrue("Mensagem	de	erro, caso variavel seja negativa",	VariavelBoleana); // O assert exibe uma mensagem especifica.
+		
+		Assert.assertFalse(); // Análogo ao assertTrue.
+		
+		Assert.assertEquals("mensagem",	"esperado",	"real"); // Dois argumentos, mais sobrecarga de mensagem.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	Capitulo 8 - Page Objects
+		Padrão de projeto
+		Temos um método para cada um dos campos.
+		Uma das melhores práticas do mercado!
+		Manter o código limpo, sem duplicidade e fácil de ler.
+		A ideia é dividir em Page Objects partes de telas/sistema em pequenas partes que tenham características comuns para simplificar o nosso entendimento.
+		
 
 	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	
